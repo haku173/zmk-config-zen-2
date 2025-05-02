@@ -61,8 +61,8 @@
             bindings = <
 &kp PLUS   &kp TILDE  &kp AMPS  &kp STAR   &kp QMARK  &kp SLASH        &kp LPAR   &kp LT   &kp LBKT   &kp LBRC   &kp COLON  &kp DQT
 &kp EQUAL  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp BACKSLASH    &kp RPAR   &kp GT   &kp RBKT   &kp RBRC   &kp SEMI   &kp SQT
-&trans     &trans     &kp EXCL  &kp AT     &kp HASH   &kp PIPE         &kp COMMA  &kp DOT  &kp UNDER  &kp MINUS  &trans     &trans
-                                &trans     &trans     &trans           &trans     &trans   &trans
+&none      &none      &kp EXCL  &kp AT     &kp HASH   &kp PIPE         &kp COMMA  &kp DOT  &kp UNDER  &kp MINUS  &none      &none
+                                &none      &none      &none            &none      &none    &none
             >;
         };
 
@@ -78,27 +78,27 @@
             bindings = <
 &kp F1         &kp F2      &kp F3      &kp F4   &kp F5   &kp F6     &kp LPAR      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp STAR
 &kp F7         &kp F8      &kp F9      &kp F10  &kp F11  &kp F12    &kp RPAR      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH
-&kp LG(LS(S))  &kp SYSREQ  &kp INSERT  &trans   &trans   &trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &trans
-                                       &trans   &trans   &trans     &trans        &trans        &trans
+&kp LG(LS(S))  &kp SYSREQ  &kp INSERT  &none    &none    &none      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
+                                       &none    &none    &none      &none         &none         &none
             >;
         };
 
         layer_3 {
             display-name = "ARROW";
             bindings = <
-&kp TAB         &trans  &kp LC(LS(TAB))  &msc SCRL_UP    &kp LC(TAB)      &kp PAGE_UP      &kp LA(LEFT)  &kp LC(PAGE_UP)   &kp UP         &kp LC(PAGE_DOWN)  &kp LA(RIGHT)  &trans
-&kp LEFT_SHIFT  &trans  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PAGE_DOWN    &kp HOME      &kp LEFT          &kp DOWN       &kp RIGHT          &kp END        &trans
-&kp LCTRL       &trans  &trans           &trans          &trans           &trans           &kp LA(UP)    &kp LC(LG(LEFT))  &trans         &kp LC(LG(RIGHT))  &trans         &trans
-                                         &trans          &trans           &trans           &trans        &trans            &kp RIGHT_ALT
+&kp TAB         &none  &kp LC(LS(TAB))  &msc SCRL_UP    &kp LC(TAB)      &kp PAGE_UP      &kp LA(LEFT)  &kp LC(PAGE_UP)   &kp UP         &kp LC(PAGE_DOWN)  &kp LA(RIGHT)  &none
+&kp LEFT_SHIFT  &none  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PAGE_DOWN    &kp HOME      &kp LEFT          &kp DOWN       &kp RIGHT          &kp END        &none
+&kp LCTRL       &none  &none            &none           &none            &none            &kp LA(UP)    &kp LC(LG(LEFT))  &none          &kp LC(LG(RIGHT))  &none          &none
+                                        &none           &none            &none            &none         &none             &kp RIGHT_ALT
             >;
         };
 
         layer_4 {
             bindings = <
-&bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                      &out OUT_USB  &out OUT_BLE  &sys_reset  &bootloader  &trans  &trans
-&bt BT_CLR       &rgb_ug RGB_ON   &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF                   &kp C_VOL_UP  &kp C_BRI_UP  &trans      &trans       &trans  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(0,0,100)    &kp C_VOL_DN  &kp C_BRI_DN  &trans      &trans       &trans  &trans
-                                                   &trans           &trans           &trans                            &trans        &trans        &trans
+&bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                      &out OUT_USB  &out OUT_BLE  &sys_reset  &bootloader  &none  &none
+&bt BT_CLR       &rgb_ug RGB_ON   &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF                   &kp C_VOL_UP  &kp C_BRI_UP  &none       &none        &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(0,0,100)    &kp C_VOL_DN  &kp C_BRI_DN  &none       &none        &none  &none
+                                                   &none            &none            &none                             &none         &none         &none
             >;
 
             label = "SET";
