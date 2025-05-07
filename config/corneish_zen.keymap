@@ -42,10 +42,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt CAPSLOCK TAB  &kp Q  &kp W  &kp E            &kp R        &kp T                 &kp Y          &kp U      &kp I          &kp O    &kp P      &kp LEFT_WIN
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D            &kp F        &kp G                 &kp H          &kp J      &kp K          &kp L    &kp SEMI   &mt RIGHT_SHIFT SQT
-&kp LCTRL         &kp Z  &kp X  &kp C            &kp V        &kp B                 &kp N          &kp M      &kp COMMA      &kp DOT  &kp MINUS  &lt 4 ESC
-                                &lt 3 LG(SPACE)  &lt 2 SPACE  &lt 1 LS(CAPSLOCK)    &kp BACKSPACE  &kp ENTER  &kp RIGHT_ALT
+&mt CAPSLOCK TAB  &kp Q  &kp W  &kp E         &kp R        &kp T                 &kp Y          &kp U        &kp I          &kp O    &kp P      &kp LEFT_WIN
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F        &kp G                 &kp H          &kp J        &kp K          &kp L    &kp SEMI   &mt RIGHT_SHIFT SQT
+&kp LCTRL         &kp Z  &kp X  &kp C         &kp V        &kp B                 &kp N          &kp M        &kp COMMA      &kp DOT  &kp MINUS  &lt 4 ESC
+                                &kp LEFT_ALT  &lt 2 SPACE  &lt 1 LS(CAPSLOCK)    &kp BACKSPACE  &lt 3 ENTER  &kp LG(SPACE)
             >;
         };
 
@@ -62,7 +62,7 @@
 &none  &kp CARET  &kp AT     &kp PLUS   &kp MINUS  &kp SLASH        &kp LT     &kp LPAR  &kp LBKT   &kp LBRC  &kp COLON  &kp DQT
 &none  &kp GRAVE  &kp AMPS   &kp EQUAL  &kp UNDER  &kp BACKSLASH    &kp GT     &kp RPAR  &kp RBKT   &kp RBRC  &kp SEMI   &kp SQT
 &none  &none      &kp PRCNT  &kp STAR   &kp TILDE  &kp PIPE         &kp COMMA  &kp DOT   &kp QMARK  &kp EXCL  &none      &none
-                             &none      &none      &none            &none      &none     &none
+                             &none      &none      &none            &trans     &none     &none
             >;
         };
 
@@ -79,17 +79,17 @@
 &kp F1         &kp F2      &kp F3      &kp F4   &kp F5   &kp F6     &kp LPAR      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp STAR
 &kp F7         &kp F8      &kp F9      &kp F10  &kp F11  &kp F12    &kp RPAR      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH
 &kp LG(LS(S))  &kp SYSREQ  &kp INSERT  &kp DEL  &none    &none      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL
-                                       &none    &none    &none      &none         &none         &none
+                                       &none    &none    &none      &trans        &none         &none
             >;
         };
 
         layer_3 {
             display-name = "ARROW";
             bindings = <
-&kp LA(TAB)     &none  &kp LC(LS(TAB))  &msc SCRL_UP    &kp LC(TAB)      &kp PAGE_UP      &kp LA(LEFT)  &kp LC(PAGE_UP)   &kp UP         &kp LC(PAGE_DOWN)  &kp LA(RIGHT)  &none
-&kp LEFT_SHIFT  &none  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PAGE_DOWN    &kp HOME      &kp LEFT          &kp DOWN       &kp RIGHT          &kp END        &none
-&kp LCTRL       &none  &kp LG(LEFT)     &kp LG(UP)      &kp LG(RIGHT)    &kp LS(F10)      &kp LA(UP)    &kp LC(LG(LEFT))  &none          &kp LC(LG(RIGHT))  &none          &none
-                                        &none           &none            &none            &none         &none             &kp RIGHT_ALT
+&trans  &none  &kp LC(LS(TAB))  &msc SCRL_UP    &kp LC(TAB)      &kp PAGE_UP      &kp LA(LEFT)  &kp LC(PAGE_UP)   &kp UP    &kp LC(PAGE_DOWN)  &kp LA(RIGHT)  &none
+&trans  &none  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PAGE_DOWN    &kp HOME      &kp LEFT          &kp DOWN  &kp RIGHT          &kp END        &none
+&trans  &none  &kp LG(LEFT)     &kp LG(UP)      &kp LG(RIGHT)    &kp LS(F10)      &kp LA(UP)    &kp LC(LG(LEFT))  &none     &kp LC(LG(RIGHT))  &none          &none
+                                &trans          &none            &none            &none         &none             &none
             >;
         };
 
